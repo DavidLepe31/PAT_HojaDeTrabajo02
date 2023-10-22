@@ -15,7 +15,7 @@ Node<char>* Ejercicio01::rotateRight(Node<char>* head, int k)
 
     while (banse < k) {
         tmp = head;
-        while (tmp && tmp->next) {
+        while (tmp!=nullptr && tmp->next!=nullptr) {
             tmp2 = tmp;
             tmp = tmp->next;
 
