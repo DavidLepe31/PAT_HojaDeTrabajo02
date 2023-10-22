@@ -2,13 +2,7 @@
 
 Node<char>* Ejercicio01::rotateRight(Node<char>* head, int k)
 {
-    if (head == nullptr) {
-        return head;
-    }
-
-    if (head->next == nullptr) {
-        return head;
-    }
+    
     Node<char>* tmp = head;
     Node<char>* tmp2 = nullptr;
     Node<char>* headf=head;
@@ -22,6 +16,7 @@ Node<char>* Ejercicio01::rotateRight(Node<char>* head, int k)
             tmp = tmp->next;
 
         }
+    
         tmp->next = headf;
         headf = tmp;
         tmp2->next = nullptr;
