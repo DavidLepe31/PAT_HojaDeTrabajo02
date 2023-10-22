@@ -25,5 +25,5 @@ Node<char>* Ejercicio01::rotateRight(Node<char>* head, int k)
         tmp2->next = nullptr;
         banse++;
     }
-    return head;
+    return nullptr;
 }
