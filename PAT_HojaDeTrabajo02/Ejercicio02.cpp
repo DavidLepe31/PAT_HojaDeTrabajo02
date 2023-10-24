@@ -32,7 +32,7 @@ Node<int>* Ejercicio02::addTwoNumbers(Node<int>* l1, Node<int>* l2)
         carry = 1;
     }
     else {
-        headf->valueue = sum;
+        headf->value = sum;
         headf->next = nullptr;
         l1 = l1->next;
         l2 = l2->next;
@@ -100,7 +100,7 @@ Node<int>* Ejercicio02::addTwoNumbers(Node<int>* l1, Node<int>* l2)
                 tmp = tmp->next;
                 l2 = l2->next;
                 carry = 1;
-                cout << "entre" << endl;
+                
             }
             else {
                 newNode->value = sum;
